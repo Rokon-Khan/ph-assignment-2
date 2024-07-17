@@ -1,0 +1,83 @@
+/* Google Fonts Style */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+
+/*Basic Font Setup  */
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.parisienne-regular {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Shared Style */
+.body-container {
+  max-width: 90rem;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+text-center {
+  text-align: center;
+}
+.display-flex {
+  display: flex;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #e6533c;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 42px;
+  border: none;
+  padding: 8px 20px;
+}
+
+/* Heade Style Design Start */
+
+.navbar {
+  display: flex;
+  max-width: 66.25rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+nav > ul > li {
+  list-style: none;
+  font-size: 18px;
+}
+
+nav > ul:not(:first-child) {
+  margin-left: 0;
+}
+
+.nav-container {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 40px;
+}
+
+.nav-item {
+  justify-content: center;
+  align-items: center;
+  gap: 2.94rem;
+  padding: 0px 25px 0px 0px;
+  margin: 5px;
+}
+
+.logo-text {
+  font-size: 2.25rem;
+  font-weight: 900;
+  font-style: italic;
+  color: #e6533c;
+}
