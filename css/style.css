@@ -26,7 +26,6 @@
 
 /* Shared Style */
 .body-container {
-  /* max-width: 90rem; */
   background-color: #000000;
   color: #ffffff;
 }
@@ -41,52 +40,107 @@
 .btn-primary {
   color: #ffffff;
   background-color: #e6533c;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
-  border-radius: 42px;
+  border-radius: 2.625rem;
   border: none;
-  padding: 8px 20px;
+  padding: 0.5rem 1.25rem;
   cursor: pointer;
+}
+
+.btn-primary-header {
+  color: #ffffff;
+  background-color: #e6533c;
+  border-style: none;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 2.625rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  margin-right: 14px;
 }
 
 .btn-primary-large {
   color: #ffffff;
   background-color: #e6533c;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
-  border-radius: 42px;
-  border: none;
-  padding: 15px 50px;
+  border-radius: 2.625rem;
+  border-style: none;
+  padding: 1rem 4.5rem;
   cursor: pointer;
 }
 
 .btn-secondary {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.8);
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
-  border-radius: 42px;
-  padding: 8px 20px;
-  border: 2px solid #ffffff;
+  border-radius: 2.625rem;
+  border: 1px solid #ffffff;
+  padding: 1rem 3rem;
   cursor: pointer;
 }
 
 .section-description {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
   margin-bottom: 1.125rem;
 }
 
 .section-title {
-  font-size: 3.75rem;
-  font-weight: 800;
+  font-size: 3rem;
+  font-weight: 900;
   margin-bottom: 1.25rem;
 }
 
 main > section {
-  max-width: 90rem;
-  margin: 8rem auto;
+  max-width: 66.25rem;
+  margin: 0 auto 6.25rem auto;
+}
+
+.hamberger {
+  display: none;
+}
+
+.run-img-container-1 {
+  width: 22.875rem;
+  height: 19.5rem;
+  border-radius: 1.125rem;
+  display: none;
+  margin-top: 2.5rem;
+}
+.run-img-1 {
+  width: 100%;
+  border-radius: 1.125rem;
+}
+
+.btn-primary-heading-1 {
+  color: #ffffff;
+  background-color: #e6533c;
+  border-style: none;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 2.625rem;
+  padding: 1rem 2.625rem;
+  cursor: pointer;
+  margin-right: 14px;
+}
+
+.btn-secondary-heading-2 {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 2.625rem;
+  border: 1px solid #ffffff;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+}
+
+.btn-mobile {
+  display: none;
 }
 
 /* section {
@@ -99,6 +153,7 @@ main > section {
     rgba(17, 17, 17, 1),
     rgba(119, 119, 119, 0)
   );
+  margin-bottom: 6.25rem;
 }
 
 .navbar {
@@ -160,6 +215,9 @@ nav > ul:not(:first-child) {
 }
 .banner-description {
   margin-bottom: 1.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .shape {
@@ -193,9 +251,8 @@ nav > ul:not(:first-child) {
   margin: 0px;
   /* font-size: 30px; */
   color: #ffffff;
-  font-weight: 600;
   background-color: rgba(48, 48, 48, 0.54);
-  border-radius: 12px;
+  border-radius: 0.75rem;
 }
 
 .img-card-2 {
@@ -211,13 +268,13 @@ nav > ul:not(:first-child) {
   /* padding: 20px 10px; */
   color: #ffffff;
   background-color: rgba(48, 48, 48, 0.54);
-  border-radius: 12px;
+  border-radius: 0.75rem;
 }
 
 .card-title-text-1 {
   font-size: 2.5rem;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 900;
   margin-bottom: 0px;
 }
 
@@ -229,33 +286,38 @@ nav > ul:not(:first-child) {
 .card-title-text-2 {
   font-size: 1.5rem;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 900;
   margin-bottom: 0px;
 }
 
 /* Habits Section Style */
 
 .habits-content {
-  max-width: 45rem;
-  margin: 0 auto;
+  max-width: 40rem;
+  margin: 0 auto 3.625rem auto;
   text-align: center;
 }
 
 .habits-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  /* grid-template-columns: repeat(4, 1fr); */
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
 }
 
 .img-container {
-  max-width: 16rem;
+  max-width: 14.5rem;
   text-align: center;
 }
 
 .habits-img {
-  border: 5px solid rgba(255, 255, 255, 0.5);
+  border: 4px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
 .img-title {
+  font-size: 1.125rem;
+  font-weight: 600;
   margin: 1rem 0px;
 }
 
@@ -263,17 +325,18 @@ nav > ul:not(:first-child) {
 
 .run-container {
   display: flex;
-
   background-color: rgba(34, 34, 34, 1);
-
   border-radius: 1.125rem;
   justify-content: space-around;
   align-items: center;
-  padding: 100px 100px;
+  padding: 2.5rem 3.375rem;
 }
 
 .run-content {
-  width: 30rem;
+  max-width: 27rem;
+}
+.btn-run {
+  margin-top: 2.125rem;
 }
 .run-img-container {
   background-image: url(../images/run.jpg);
@@ -284,19 +347,15 @@ nav > ul:not(:first-child) {
   background-repeat: no-repeat;
 }
 
-/* .run-img {
-  width: 100%;
-  border-radius: 18px;
-} */
-
 /* Training Section Style */
 
-.training-container {
+/* .training-container {
   max-width: 90rem;
-}
+} */
 
 .training-content {
-  max-width: 45rem;
+  max-width: 40rem;
+  margin-bottom: 3.625rem;
 }
 
 .training-row-1 {
@@ -376,8 +435,8 @@ nav > ul:not(:first-child) {
 /* BMI Calculator Section Style */
 
 .BMI-content {
-  max-width: 45rem;
-  margin: 0 auto;
+  max-width: 40rem;
+  margin: 0 auto 3.625rem auto;
 }
 
 .bmi-container {
@@ -385,89 +444,110 @@ nav > ul:not(:first-child) {
   justify-content: space-around;
   align-items: center;
   background-color: rgba(52, 52, 52, 0.5);
-  padding: 50px 100px;
+  padding: 3rem 6rem;
+  margin-bottom: 6.25rem;
 }
 
 .bmi-title {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.75rem;
+  font-weight: 900;
   margin: 1.25rem 0px;
+}
+.bmi-chart-title {
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
 }
 
 .bmi-calculator {
-  max-width: 41rem;
+  max-width: 36rem;
 }
 
 table {
   border-collapse: collapse;
-  margin-top: 1.5rem 0;
+  max-width: 19.375rem;
 }
 th,
 td {
-  border: 1px solid gray;
-  padding: 1.125rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem;
 }
 th {
-  font-size: 1.12rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 td {
-  color: gray;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 input[type="text"] {
   background-color: rgba(151, 151, 151, 0.3);
-  width: 42%;
+  width: 41.5%;
   border-style: none;
-  padding: 20px 20px;
-  margin: 10px 10px 10px 0;
-  border-radius: 10px;
+  padding: 13px 20px;
+  margin-bottom: 12px;
+  /* margin-right: 10px; */
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.bmi-calculator-form input[name="height"],
+input[name="age"] {
+  margin-right: 12px;
 }
 
 select {
   background-color: rgba(151, 151, 151, 0.3);
-  font-size: 1.125rem;
+  font-size: 1rem;
   width: 48%;
   border-style: none;
-  padding: 20px 20px;
-  margin: 10px 10px 10px 0;
-  border-radius: 10px;
-  color: rgba(220, 220, 220, 0.8);
+  padding: 13px 20px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 select[name="activity"] {
-  width: 99%;
+  display: block;
+  width: 100%;
   margin-bottom: 20px;
 }
 
 form ::placeholder {
-  font-size: 1.125rem;
-  color: rgba(220, 220, 220, 0.8);
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-bmi {
+  margin-top: 2.125rem;
 }
 
 /* Our Team Setion Style */
 .team-content {
   text-align: center;
-  max-width: 45rem;
-  margin: 0px auto 100px auto;
+  max-width: 40rem;
+  margin: 0px auto 3.625rem auto;
 }
 
 .team-container {
-  background-color: rgba(80, 80, 80, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* grid-template-rows: repeat(3, 1fr); */
   justify-content: space-around;
   align-content: center;
-  gap: 30px;
-  padding: 50px 50px;
-  border-radius: 40px;
-  margin-bottom: 100px;
+  gap: 1.25rem;
+  padding: 1.25rem 1.25rem;
+  border-radius: 1.125rem;
 }
 
 .team-img {
   width: 100%;
-  height: 18rem;
-  border-radius: 30px;
+  height: 17rem;
+  border-radius: 1.125rem;
+  filter: brightness(80%);
 }
 
 .team-img-box {
@@ -492,39 +572,43 @@ form ::placeholder {
 /* Footer Section Style */
 
 footer {
-  background-color: rgba(80, 80, 80, 0.5);
-  padding: 50px 0px;
+  background-color: rgba(255, 255, 255, 0.1);
+  /* padding: 50px 0px; */
 }
 .footer-container {
   display: grid;
   grid-template-columns: 0.5fr 0.25fr 0.25fr;
-  justify-content: space-around;
-  padding: 100px 100px;
-  /* align-content: center; */
+  justify-content: space-between;
+  align-content: center;
+  padding: 4.125rem 11.875rem;
+  max-width: 66.25rem;
+  margin: 0 auto;
 }
 
 .footer-logo-text {
-  font-size: 4rem;
-  font-weight: 900;
+  font-size: 4.375rem;
+  font-weight: 800;
   font-style: italic;
   color: #e6533c;
-  margin-bottom: 50px;
+  margin-bottom: 1.25rem;
 }
 
 .footer-logo-content {
-  width: 30rem;
+  max-width: 26rem;
 }
 .get-started-title {
-  font-size: 1.75rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
 }
 
 footer ul li {
-  font-size: 1.25rem;
+  font-size: 1.4375rem;
   list-style-type: none;
-  margin: 1rem 0;
-  padding: 10px 10px;
-  color: rgba(220, 220, 220, 0.8);
+  margin-bottom: 1.25rem;
+  /* margin: 0.625rem 0; */
+  /* padding: 10px 10px; */
+  color: rgba(220, 220, 220, 0.5);
   cursor: pointer;
 }
 
@@ -540,6 +624,174 @@ hr {
   font-size: 1.25rem;
   font-weight: 400;
   text-align: center;
-  color: rgba(220, 220, 220, 0.8);
-  margin-top: 1.5rem;
+  color: rgba(220, 220, 220, 0.5);
+  margin-top: 2.125rem;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 576px) {
+  .banner-section,
+  .run-container,
+  .bmi-container,
+  .habits-row {
+    flex-direction: column;
+    /* margin-top: 3rem; */
+  }
+
+  .nav-container {
+    display: none;
+  }
+  .hamberger {
+    display: block;
+  }
+
+  .hamberger i {
+    font-size: 26px;
+  }
+
+  .training-row-1,
+  .training-row-2,
+  .team-container,
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  form input[type="text"],
+  select,
+  select[name="activity"] {
+    margin-bottom: 10px;
+  }
+
+  .habits-content,
+  .run-content,
+  .training-content,
+  .BMI-content,
+  .team-content {
+    width: 100%;
+  }
+  .navbar {
+    padding: 5%;
+  }
+
+  .banner-content {
+    width: 352px;
+  }
+  .banner-heading {
+    width: 283px;
+  }
+  .banner-heading {
+    font-size: 2.25rem;
+  }
+
+  .btn-primary-header,
+  .btn-secondary {
+    display: none;
+  }
+
+  .btn-mobile {
+    display: flex;
+  }
+
+  .btn-run {
+    padding: 16px 80px;
+  }
+
+  .run-container {
+    margin: 2%;
+  }
+  /* .training-content {
+    margin: 353px;
+  } */
+  .training {
+    margin: 0 2%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+  .run-img-container {
+    display: none;
+  }
+
+  .run-img-container-1 {
+    display: block;
+    /* width: 100%; */
+  }
+
+  .bmi-title,
+  .bmi-chart-title {
+    font-size: 1rem;
+  }
+
+  table {
+    width: 310px;
+    height: 216px;
+  }
+  th,
+  td {
+    padding: 10px;
+  }
+
+  .bmi-calculator {
+    width: 354px;
+  }
+
+  input[type="text"] {
+    width: 38%;
+    display: inline-block;
+  }
+
+  .bmi-calculator-form input[name="height"],
+  input[name="age"] {
+    margin-right: 0;
+  }
+
+  select {
+    width: 49%;
+  }
+
+  select[name="activity"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .img-card-1 {
+    width: 146px;
+    height: 74px;
+    padding: 10px 5px;
+    top: 10%;
+    right: 3%;
+  }
+
+  .img-card-2 {
+    width: 155px;
+    height: 72px;
+    bottom: 40%;
+    left: 10%;
+  }
+  .card-description-text-1 {
+    font-size: 9.83px;
+    font-weight: 400;
+  }
+
+  .card-description-text-2 {
+    font-size: 12.1px;
+  }
+  .card-title-text-1 {
+    font-size: 32.24px;
+  }
+
+  .card-title-text-2 {
+    font-size: 18.2px;
+  }
+
+  .footer-container {
+    width: 100%;
+    padding-left: 5%;
+  }
+  .footer-logo-content {
+    width: 100%;
+  }
 }
