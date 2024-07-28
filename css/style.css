@@ -106,7 +106,7 @@ main > section {
 
 .run-img-container-1 {
   width: 22.875rem;
-  height: 19.5rem;
+  /* height: 19.5rem; */
   border-radius: 1.125rem;
   display: none;
   margin-top: 2.5rem;
@@ -484,7 +484,7 @@ td {
 
 input[type="text"] {
   background-color: rgba(151, 151, 151, 0.3);
-  width: 41.5%;
+  width: 40.5%;
   border-style: none;
   padding: 13px 20px;
   margin-bottom: 12px;
@@ -625,12 +625,17 @@ hr {
   font-weight: 400;
   text-align: center;
   color: rgba(220, 220, 220, 0.5);
-  margin-top: 2.125rem;
+  /* margin-top: 2.125rem; */
+  padding: 2.125rem 0px;
 }
 
 /* Responsive Design */
 
 @media screen and (max-width: 576px) {
+  * {
+    overflow-x: hidden;
+  }
+
   .banner-section,
   .run-container,
   .bmi-container,
@@ -663,15 +668,20 @@ hr {
     margin-bottom: 10px;
   }
 
-  .habits-content,
-  .run-content,
+  .habits-content {
+    max-width: 318px;
+  }
+
   .training-content,
-  .BMI-content,
+  .BMI-content {
+    max-width: 353px;
+    padding: 0px 10%;
+  }
   .team-content {
-    width: 100%;
+    max-width: 309px;
   }
   .navbar {
-    padding: 5%;
+    padding: 52px 20px 0px 20px;
   }
 
   .banner-content {
@@ -699,12 +709,7 @@ hr {
 
   .run-container {
     margin: 2%;
-  }
-  /* .training-content {
-    margin: 353px;
-  } */
-  .training {
-    margin: 0 2%;
+    padding: 31px 33px;
   }
 
   .section-title {
@@ -716,7 +721,11 @@ hr {
 
   .run-img-container-1 {
     display: block;
-    /* width: 100%; */
+    width: 100%;
+  }
+
+  .run-img-1 {
+    width: 100%;
   }
 
   .bmi-title,
@@ -792,6 +801,6 @@ hr {
     padding-left: 5%;
   }
   .footer-logo-content {
-    width: 100%;
+    width: 16rem;
   }
 }
