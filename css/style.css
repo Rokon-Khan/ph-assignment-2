@@ -804,3 +804,29 @@ hr {
     width: 16rem;
   }
 }
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .banner-section {
+    flex-direction: column;
+  }
+
+  .navbar {
+    justify-content: space-around;
+  }
+
+  .habits-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .run-container {
+    max-width: 683px;
+    /* padding: 20px 10px; */
+    margin: 0 auto;
+  }
+
+  .run-content {
+    max-width: 263px;
+  }
+}
