@@ -350,7 +350,9 @@ nav > ul:not(:first-child) {
 /* Training Section Style */
 
 /* .training-container {
-  max-width: 90rem;
+  display: grid;
+  row-gap: 0;
+  
 } */
 
 .training-content {
@@ -363,11 +365,13 @@ nav > ul:not(:first-child) {
   grid-template-columns: 0.25fr 0.5fr 0.25fr;
   /* justify-content: center;
   align-content: center; */
+  position: relative;
 }
 
 .training-row-2 {
   display: grid;
   grid-template-columns: 0.45fr 0.25fr 0.3fr;
+  position: relative;
 }
 
 .training-img {
@@ -375,17 +379,72 @@ nav > ul:not(:first-child) {
   height: 16rem;
 }
 
-.training-img-1 {
-  /* background-blend-mode: screen; */
-  /* filter: brightness(70%); */
-  /* filter: grayscale(1); */
-  /* filter: contrast(50%); */
-  /* background-image: linear-gradient(
-    rgba(135, 206, 250, 0.8),
-    rgba(135, 206, 250, 1)
-  ); */
-  opacity: 0.5;
+
+
+.training-img-1::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(6, 255, 210, 0.5); /* Change the color and opacity as needed */
 }
+
+.training-img-2::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.3); /* Change the color and opacity as needed */
+}
+
+.training-img-3::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Change the color and opacity as needed */
+}
+.training-img-4::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Change the color and opacity as needed */
+}
+.training-img-5::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(66, 255, 0, 0.3); /* Change the color and opacity as needed */
+}
+.training-img-6::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 71, 255, 0.3); /* Change the color and opacity as needed */
+}
+
+
 
 .training-img-1,
 .training-img-2,
@@ -461,6 +520,10 @@ nav > ul:not(:first-child) {
 
 .bmi-calculator {
   max-width: 36rem;
+}
+
+.bmi-calculator-content{
+  margin-bottom: 2.125rem;
 }
 
 table {
@@ -654,9 +717,28 @@ hr {
   .hamberger i {
     font-size: 26px;
   }
+  
+  .training-row-1{
+    display: grid;
+    grid-template-columns: 0.55fr 0.45fr;
+    max-width: 353px;
+    max-height: 253px;
+    /* align-items: center; */
+    margin: 0 auto;
+  }
+  .training-row-2{
+    display: grid;
+    grid-template-columns: 0.45fr 0.55fr;
+    max-width: 353px;
+    max-height: 253px;
+    /* align-items: center; */
+    margin: 0 auto;
+  }
 
-  .training-row-1,
-  .training-row-2,
+  .training-img-3, .training-img-5{
+    display: none;
+  }
+
   .team-container,
   .footer-container {
     grid-template-columns: 1fr;
